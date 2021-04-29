@@ -47,7 +47,6 @@ redis_data/
 ### Other ###
 #############
 
-*.env
 *.log
 log/
 *~
