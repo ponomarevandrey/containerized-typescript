@@ -1,4 +1,4 @@
-# Dockerized TypeScript app
+# Dockerized TypeScript Node.js server
 
 The project demonstrates how to set up and debug TypeScript app inside Docker container with VS Code. 
 
@@ -8,6 +8,12 @@ We use:
 * TypeScript Compiler
 * VS Code
 * `ts-node` and `nodemon` packages 
+
+## Test container
+
+```shell
+curl http://localhost:8080/hello/john
+```
 
 ## TypeScript Compiler configuration
 

@@ -2,19 +2,18 @@ version: "3.7"
 
 services:
 
-  web-server:
-    container_name: example-web-server
+  node:
+    container_name: node
     build:
-      context: ./example-web-server
+      context: ./node
       dockerfile: Dockerfile.dev
     volumes:
-      - ./example-web-server/src:/home/node/app/src
-      - ./example-web-server/tsconfig.json:/home/node/app/tsconfig.json
+      - ./node/src:/node/src
+      - ./node/tsconfig.json:/node/tsconfig.json
     expose:
       - "8080"
     ports:
       - "8080:8080"
       - "9229:9229"
     env_file:
-      - ./example-web-server.env
-    command: npm start
+      - ./node/.env

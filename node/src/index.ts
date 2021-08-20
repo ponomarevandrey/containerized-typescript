@@ -13,3 +13,4 @@ app.listen(PORT, () => {
     `${NAME}, the server is listening on port ${PORT}`,
   );
 });
+console.log("!");
