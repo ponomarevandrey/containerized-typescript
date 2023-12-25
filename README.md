@@ -9,6 +9,16 @@ We use:
 * VS Code
 * `ts-node` and `nodemon` packages 
 
+
+
+## Troubleshooting
+
+* **If you experience an error concerned with types on Request object of Express, do this:** https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/62263 . 
+
+  In short, just issue this command: `npm i --save-dev @types/express-serve-static-core@4.17.28` - this fixes types, bc the latest version of `express-serve-static-core` has breaking changes or wrong types, I don't know, but something is wrong with it.
+
+
+
 ## Test container
 
 ```shell
