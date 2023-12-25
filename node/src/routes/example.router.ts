@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction, Router } from "express";
 
 const router = Router();
 
@@ -7,7 +7,7 @@ router.get(
   (req: Request, res: Response, next: NextFunction) => {
     const { name } = req.params;
     res.send(`Hello ${name} from express`);
-  }
+  },
 );
 
 export const exampleRouter = router;
